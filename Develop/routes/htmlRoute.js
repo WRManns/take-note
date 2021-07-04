@@ -1,16 +1,17 @@
 //Listing dependencies
 const path = require('path');
+const router = require('express').Router();
 
 
-module.exports = (app) => {
     // => HTML GET Requests
-    app.get('/tables', (req, res) => {
+    router.get('/tables', (req, res) => {
       res.sendFile(path.join(__dirname, '../public/notes.html'));
     });
   
     // If no matching route is found default to home
-    app.get('*', (req, res) => {
+    router.get('*', (req, res) => {
       res.sendFile(path.join(__dirname, '../public/notes.html'));
     });
-  };
+
+module.exports = router;
   

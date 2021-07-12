@@ -20,12 +20,13 @@ router.post('/notes', (req,res) => {
     .catch((err) => res.status(500).json(err));
 });
 
-//Deletes notes by id from database storage
+//Deletes notes by id from dbstorage
 router.delete('/notes/:id', (res,req) => {
     dbstore
-    .removeNote(req.params.id)
+    .deleteNote(req.params.id)
     .then(() => res.json({ok: true}))
     .catch((err) => res.status(500).json(err));
 });
 
 module.exports = router;
+

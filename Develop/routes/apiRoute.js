@@ -21,7 +21,7 @@ router.post('/notes', (req,res) => {
 });
 
 //Deletes notes by id from dbstorage
-router.delete('/notes/:id', (res,req) => {
+router.delete('/notes/:id', (req,res) => {
     dbstore
     .deleteNote(req.params.id)
     .then(() => res.json({ok: true}))

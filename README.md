@@ -12,7 +12,6 @@
 - [Description](#description)
 - [Installation](#installation)
 - [Usage](#usage)
-
 - [Contirbuting](#collaborators)
 - [GitHub](#github)
 - [Tests](#tests)
@@ -28,7 +27,7 @@
 
     ## Deployed App   
 
-    https://wrmanns.github.io/take-note/
+    https://gentle-escarpment-77454.herokuapp.com/
 
     ## Test
 
